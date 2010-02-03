@@ -3,12 +3,21 @@
 
 = Basic instructions =
 
-Just copy the code below into your web page. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. 
+Before using Shifter, you must add the following lines to your web page's `head` section. Don't forget to change include paths. NOTE: We included the required javascript libraries for your convenience. But don't have to add them if you have the required versions included already. 
+
+{{{
+<link rel="stylesheet" type="text/css" href="styles/shifter.css" />
+<script type="text/javascript" src="scripts/prototype.js"></script>
+<script type="text/javascript" src="scripts/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="scripts/shifter.js"></script>
+}}}
+
+Now the only thing thats left is the code below. Copy it to the web page you're going to use Shifter. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. Use comma to separate them.
 
 {{{
 <script type="text/javascript">
   document.observe('dom:loaded', function() {
-    new Shifter("someAjaxUrl", {});
+    new Shifter("someAjaxUrl", {duration: 0.5});
   });
 </script>
 }}}
@@ -34,4 +43,4 @@ echo "<img style=\"border: 1px solid black; margin: 0px 2px;\" src=\"images/" . 
 ?>
 }}}
 
-You can find all of this code in demo files, provided with the package. If you have trouble figuring out how to use. Please post your detailed problem in the support forum.
+You can find all of this code in demo files, which are provided with the package. If you have trouble figuring out how to use, please post your detailed problem in the support forum.
