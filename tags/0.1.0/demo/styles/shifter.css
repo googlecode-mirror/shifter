@@ -1,0 +1,15 @@
+#wrapper {
+  width: 306px; 
+  overflow: hidden;
+}
+
+#container {
+	width: 10000px; 
+	position: relative;
+}
+
+.frame {
+  float: left;
+  width: 306px;
+}
+
