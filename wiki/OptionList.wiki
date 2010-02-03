@@ -3,13 +3,14 @@
 
 = Option List =
 
-  * `wrapper_id` - The main wrapper ID. Default: `wrapper`.
-  * `container_id` - The main container ID. Default: `container`.
-  * `frame_id` - Element class. Default: `frame`.
-  * `backward_id` - The backward element id to observe. Default: `backward`^1^.
-  * `forward_id` - The forward element id to observe. Default: `forward`^1^.
+  * `wrapper_id` - The main wrapper ID. Default: `wrapper`^1^.
+  * `container_id` - The main container ID. Default: `container`^1^.
+  * `frame_id` - Element class. Default: `frame`^1^.
+  * `backward_id` - The backward element id to observe. Default: `backward`^2^.
+  * `forward_id` - The forward element id to observe. Default: `forward`^2^.
   * `animation` - Animation type. Default: `spring`. Available: `linear, sinoidal, spring`.
   * `duration` - The duration of the animation. Default: `1` sec.
   * `event` - The event on which change is triggered.. Default: `click`.
 
-*^1^ - If you change direction ids and are using provided carousel and glider classes, you MUST change the direction values there too.*
+*^1^* - If you change element ids, don't forget to change them in the provided css file. <br />
+*^2^* - If you change direction ids and are using provided carousel and glider classes, you MUST change the direction values there too.
