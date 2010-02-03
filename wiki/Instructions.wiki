@@ -3,7 +3,7 @@
 
 = Basic instructions =
 
-Before using Shifter, you must add the following lines to your web page's `head` section. Don't forget to change include paths. NOTE: We included the required javascript libraries for your convenience. But don't have to add them if you have the required versions included already. 
+Before using Shifter, you must add the following lines to your web page's `head` section. Don't forget to change include paths. NOTE: I've included the required javascript libraries for your convenience. But you don't have to add them if you have the required versions included already. 
 
 {{{
 <link rel="stylesheet" type="text/css" href="styles/shifter.css" />
