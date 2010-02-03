@@ -1,0 +1,37 @@
+#summary Instructions on how to use Shifter
+#labels Featured,Phase-Deploy
+
+= Basic instructions =
+
+Just copy the code below into your web page. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. 
+
+{{{
+<script type="text/javascript">
+  document.observe('dom:loaded', function() {
+    new Shifter("someAjaxUrl", {});
+  });
+</script>
+}}}
+
+Please use provided php classes for desired Shifter functioning. In case you're having trouble figuring out how the ajax script should look, here's a quick example of carousel:
+
+{{{
+<?php
+/* Required */
+session_start(); 
+
+/* Path to the carousel class. Change to fit. */
+require_once 'classes/carousel.class.php';
+
+/* Create carousel object with parameters. Change only the first value */
+$carousel = new carousel(10, $_GET['preload'], $_GET['direction']);
+
+/* Get new position */
+$position = $carousel->getPosition();
+
+/* An example how to use position for image loading */
+echo "<img style=\"border: 1px solid black; margin: 0px 2px;\" src=\"images/" . $position . ".jpg\" />";
+?>
+}}}
+
+You can find all of this code in demo files, provided with the package. If you have trouble figuring out how to use. Please post your detailed problem in the support forum.
