@@ -12,9 +12,19 @@ Before using Shifter, you must add the following lines to your web page's `head`
 <script type="text/javascript" src="scripts/shifter.js"></script>
 }}}
 
-Now the only thing thats left is the code below. Copy it to the web page you're going to use Shifter. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. Use comma to separate them.
+Now the only thing thats left is the code below. Copy it to the web page you're going to use Shifter. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. Use comma to separate them. NOTE: There are no special styles provided except the required ones for script to work. 
 
 {{{
+<div>
+  <div id="backward">Backward</div>
+  <div id="forward" >Forward</div>
+</div>
+
+<div id="wrapper">
+  <div id="container">
+  </div>
+</div>
+
 <script type="text/javascript">
   document.observe('dom:loaded', function() {
     new Shifter("someAjaxUrl", {duration: 0.5});
