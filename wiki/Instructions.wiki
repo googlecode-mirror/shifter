@@ -53,4 +53,4 @@ echo "<img style=\"border: 1px solid black; margin: 0px 2px;\" src=\"images/" . 
 ?>
 }}}
 
-You can find all of this code in demo files, which are provided with the package. If you have trouble figuring out how to use, please post your detailed problem in the support forum.
+You can find all of this code in demo files, which are provided with the package. If you have trouble figuring out how to use, please post your detailed problem in the [http://groups.google.com/group/ajax-based-content-shifter-discussions discussion groups]
