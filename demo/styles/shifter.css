@@ -1,11 +1,11 @@
 #wrapper {
   width: 306px; 
   overflow: hidden;
+  position: relative;
 }
 
 #container {
 	width: 10000px; 
-	position: relative;
 }
 
 .frame {
