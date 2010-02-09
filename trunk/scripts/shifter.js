@@ -60,8 +60,8 @@ var Shifter = Class.create({
       asynchronous: false,
       parameters: {direction: direction,
                    preload: preload},
-      onComplete: function(transport) {
-        var frame = new Element('div', {class: 'frame'});
+      onComplete: function(transport) {         
+        var frame = new Element('div', {'class': 'frame'});
         frame.update(transport.responseText);
 
         if (direction == this.backward_id) {
@@ -81,7 +81,7 @@ var Shifter = Class.create({
   execute: function(event) {    
     this.stop();
     
-    var direction = event.findElement('.').id;
+    var direction = event.findElement('div').id;
     
     if (direction == this.backward_id) {
       var displacement = -this.width;
