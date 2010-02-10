@@ -12,7 +12,7 @@ Before using Shifter, you must add the following lines to your web page's `head`
 <script type="text/javascript" src="scripts/shifter.js"></script>
 }}}
 
-Now the only thing thats left is the code below. Copy it to the web page you're going to use Shifter. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. Use comma to separate them. NOTE: There are no special styles provided except the required ones for script to work. 
+Now the only thing thats left is the code below. Copy it to the web page you're going to use Shifter. Change the `someAjaxUrl` to real path where your ajax script relies. You can provide various options (OptionList) in `{}` placeholder. Use comma to separate them. 
 
 {{{
 <div>
@@ -32,7 +32,7 @@ Now the only thing thats left is the code below. Copy it to the web page you're 
 </script>
 }}}
 
-Please use provided php classes for desired Shifter functioning. In case you're having trouble figuring out how the ajax script should look, here's a quick example of carousel:
+Please use provided php classes for desired Shifter functioning. And here's a quick example of carousel php script:
 
 {{{
 <?php
@@ -53,7 +53,7 @@ echo "<img style=\"border: 1px solid black; margin: 0px 2px;\" src=\"images/" . 
 ?>
 }}}
 
-Here's the necessary css style code for shifter to work:
+Here's the necessary css style code for shifter to work. NOTE: There are no special eyecandy styles provided except the required ones for script to work. 
 
 {{{
 #wrapper {
@@ -63,7 +63,7 @@ Here's the necessary css style code for shifter to work:
 }
 
 #container {
-  width: 10000px; /* Hidden container withd. Should be more than 5 * #wrapper width. Most of the time no need to change. */
+  width: 10000px; /* Hidden container width. Should be more than 5 * #wrapper width. Most of the time no need to change. */
 }
 
 .frame {
